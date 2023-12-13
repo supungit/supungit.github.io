@@ -8,12 +8,15 @@ body {
   padding: 30px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(66, 168, 192);
+  /* background: rgb(66, 168, 192);
   background: linear-gradient(
     0deg,
     rgba(66, 168, 192, 0.75) 0%,
     rgba(245, 245, 245, 1) 100%
-  );
+  ); */
+  background: linear-gradient(-45deg, #ffffff, #62caef, #f5f5f5, #42a8c0);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 h1,
 h2,
@@ -305,5 +308,17 @@ p {
 	}
 	100% {
 		transform: translatey(0px);
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
 	}
 }
