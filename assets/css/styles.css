@@ -88,9 +88,9 @@ p {
 }
 .sidebar-wrapper .profile {
   margin-bottom: 5px;
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
   object-fit: cover;
   animation: float 6s ease-in-out infinite;
 }
